@@ -76,12 +76,13 @@ function Welcome({ nameOne, nameTwo, setPlayerOne, setPlayerTwo, setNameOne, set
       },
       button: {
         width: '100%',
-        height: 100,
+        height: 80,
         backgroundColor: 'black',
         color: 'white',
         border: 'none',
         borderRadius: 10,
-        fontSize: 16
+        fontSize: 16,
+        cursor: 'pointer'
       },
       logo: {
         height: 100,
