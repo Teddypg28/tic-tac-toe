@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-import '../board.css'
+import '../css/board.css'
 
 import Heading from './Heading';
 import Square from './Square';

@@ -1,24 +1,14 @@
 import React from 'react';
 
+import '../css/heading.css'
+
 function Heading({header}) {
     
     return (
-        <div style={styles.container}>
+        <div className='headingContainer'>
             {header}
         </div>
     );
-}
-
-const styles = {
-    container: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        position: 'absolute',
-        fontWeight: 'bold',
-        fontSize: 40,
-        top: 105
-    }
 }
 
 export default Heading;

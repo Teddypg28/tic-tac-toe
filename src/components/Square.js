@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../square.css'
+import '../css/square.css'
 
 function Square({value, onClick}) {
 

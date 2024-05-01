@@ -1,0 +1,58 @@
+.formStyle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.welcomeMainContainer {
+    height: 100vh;
+    background-size: cover;
+    background-image: url('https://www.shutterstock.com/shutterstock/videos/1062255727/thumb/1.jpg?ip=x480')
+}
+
+.welcomeContainer {
+    position: relative;
+    top: 150px;
+    color: white;
+    overflow: auto
+}
+
+.input {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: none
+}
+
+.header {
+    text-align: center;
+    font-size: 35px
+}
+
+.button {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer
+}
+
+.welcomeLogo {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px
+}
