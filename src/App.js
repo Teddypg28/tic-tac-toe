@@ -6,23 +6,18 @@ import Welcome from './components/Welcome';
 function App() {
 
   const [playerOne, setPlayerOne] = useState('')
-  const [playerTwo, setPlayerTwo] = useState('')
 
   const [nameOne, setNameOne] = useState('')
-  const [nameTwo, setNameTwo] = useState('')
 
   return ( 
     <>   
-      { !playerOne || !playerTwo ? 
+      { !playerOne ? 
       <Welcome 
       nameOne={nameOne}
-      nameTwo={nameTwo}
       setNameOne={setNameOne} 
-      setNameTwo={setNameTwo} 
       setPlayerOne={setPlayerOne}
-      setPlayerTwo={setPlayerTwo}
       /> 
-      : <Board playerOne={playerOne} playerTwo={playerTwo} /> }
+      : <Board playerOne={playerOne} /> }
     </>
   )
 }

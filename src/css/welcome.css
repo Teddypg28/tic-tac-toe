@@ -11,13 +11,13 @@
 .welcomeMainContainer {
     height: 100vh;
     background-size: cover;
-    background-image: url('https://www.shutterstock.com/shutterstock/videos/1062255727/thumb/1.jpg?ip=x480')
 }
 
 .welcomeContainer {
     position: relative;
     top: 150px;
-    color: white;
+    color: rgb(137, 180, 248);
+    font-weight: bold;
     overflow: auto
 }
 
@@ -25,12 +25,12 @@
     height: 50px;
     width: 100%;
     border-radius: 10px;
-    padding: 35px;
-    font-size: 20px;
+    border: 2px solid rgb(159, 192, 244);
+    padding: 30px 15px;
+    font-size: 16px;
     font-weight: bold;
     box-sizing: border-box;
     margin-bottom: 15px;
-    border: none
 }
 
 .header {
@@ -40,9 +40,10 @@
 
 .button {
     width: 100%;
-    height: 80px;
-    background-color: black;
+    height: 65px;
+    background-color: rgb(159, 192, 244);
     color: white;
+    font-weight: bold;
     border: none;
     border-radius: 10px;
     font-size: 16px;
