@@ -66,6 +66,16 @@ function Board({playerOne, playerTwo="Robo"}) {
         return best
     }
 
+    const reachesTerminalState = (index) => {
+        const currentBoardCopy = [...currentBoard]
+        currentBoardCopy[index] = '0'
+        const terminalValue = getTerminalValue(currentBoardCopy)
+        if (terminalValue !== null) {
+            return true
+        }
+        return false
+    }
+
     const bestMove = () => {
         let bestValue = Infinity
         let bestSquare
@@ -78,6 +88,12 @@ function Board({playerOne, playerTwo="Robo"}) {
                 if (score < bestValue) {
                     bestValue = score
                     bestSquare = index
+                } else if (score === bestValue) {
+                    currentBoardCopy[index] = 'O'
+                    if (getTerminalValue(currentBoardCopy) === -1) {
+                        bestSquare = index
+                    }
+                    currentBoardCopy[index] = null
                 }
             }
         })
@@ -88,7 +104,6 @@ function Board({playerOne, playerTwo="Robo"}) {
         if (currentTurn === playerTwo) {
             bestMove()
         }
-
     }, [currentTurn, playerTwo, bestMove])
 
     // Handle Square Click
